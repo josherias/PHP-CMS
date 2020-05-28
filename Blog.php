@@ -52,6 +52,9 @@
 
                         </div>
                     </form>
+                    <li class="nav-item">
+                        <a href="Login.php" class="nav-link"><i class="fas fa-user"></i> Login</a>
+                    </li>
                 </ul>
                 <!-- ------X--------search button-----X-------- -->
             </div>
