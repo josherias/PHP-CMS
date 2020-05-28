@@ -109,12 +109,13 @@ Confirm_Login(); ?>
     <!-- --------------MAIN--------------------------------- -->
     <section class="container py-2 mb-4" style="min-height: 400px;">
         <div class="row">
-            <?php
-            echo ErrorMessage();
-            echo SuccessMessage();
-            ?>
+
             <!-- ---------Left sid area---------- -->
             <div class="col-lg-2 d-none d-md-block">
+                <?php
+                echo ErrorMessage();
+                echo SuccessMessage();
+                ?>
                 <div class="card text-center bg-dark text-white mb-3">
                     <div class="card-body">
                         <h1 class="lead">Posts</h1>

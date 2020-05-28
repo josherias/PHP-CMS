@@ -60,7 +60,7 @@
     <div class="container">
         <div class="row mt-4">
             <!-- ------Main Area-------- -->
-            <div class="col-sm-8">
+            <div class="col-sm-9">
                 <h1>The complete CMS Blog</h1>
                 <h1 class="lead">The complete Blog Using PHP @ Josh</h1>
                 <?php
@@ -198,7 +198,7 @@
             <!-- --X----Main Area----X---- -->
 
             <!-- ------Side Area-------- -->
-            <div class="col-sm-4 d-none d-md-block d-lg-block">
+            <div class="col-sm-3 d-none d-md-block d-lg-block">
                 <!-- -------card one ------- -->
                 <div class="card mt-4">
                     <div class="card-body">
