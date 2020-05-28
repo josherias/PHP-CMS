@@ -46,40 +46,21 @@ if ($Result == 1) {
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">JOSH</a>
+            <a href="Blog.php?page=1" class="navbar-brand">JOSH</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapseCMS">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarcollapseCMS">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="Blog.php" class="nav-link">Home</a>
+                        <a href="Blog.php?page=1" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Blog.php" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Features</a>
+                        <a href="Blog.php?page=1" class="nav-link">Blog</a>
                     </li>
 
                 </ul>
-                <!-- --------------search button------------- -->
-                <ul class="navbar-nav ml-auto">
-                    <form class="form-inline d-none d-sm-block" action="Blog.php" method="GET">
-                        <div class="form-group">
-                            <input class="form-control mr-2" type="text" name="Search" placeholder="Search here">
-                            <button type="submit" class="btn btn-primary" name="SearchButton">Go</button>
 
-                        </div>
-                    </form>
-                </ul>
-                <!-- ------X--------search button-----X-------- -->
             </div>
         </div>
     </nav>

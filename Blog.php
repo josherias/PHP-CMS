@@ -29,17 +29,9 @@
                     <li class="nav-item">
                         <a href="Blog.php?page=1" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
+
                     <li class="nav-item">
                         <a href="Blog.php?page=1" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Features</a>
                     </li>
 
                 </ul>
@@ -53,7 +45,7 @@
                         </div>
                     </form>
                     <li class="nav-item">
-                        <a href="Login.php" class="nav-link"><i class="fas fa-user"></i> Login</a>
+                        <a href="Login.php" class="nav-link"><i class="fas fa-user"></i> Admin Login</a>
                     </li>
                 </ul>
                 <!-- ------X--------search button-----X-------- -->
@@ -206,13 +198,15 @@
             <!-- --X----Main Area----X---- -->
 
             <!-- ------Side Area-------- -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 d-none d-md-block d-lg-block">
                 <!-- -------card one ------- -->
                 <div class="card mt-4">
                     <div class="card-body">
                         <img src="Images/tik-tok-0827.jpg" class="d-block img-fluid mb-3" alt="">
                         <div class="text-center">
-                            <h3>Tik Tok</h3>
+                            <a href="www.google.com/tiktok" target="_blank">
+                                <h3>Tik Tok</h3>
+                            </a>
                             <h4 class="lead">Sign Up for free</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit. Dolorum consequuntur autem iste
@@ -222,30 +216,15 @@
                     </div>
                 </div>
                 <br>
-                <!-- -------card two ------- -->
-                <div class="card mt-5">
-                    <div class="card-header bg-dark text-light">
-                        <h2 class="lead"> Sign Up !</h2>
-                    </div>
-                    <div class="card-body">
-                        <button class="btn btn-primary btn-block text-center text-white mb-4">Join the Forum</button>
-                        <button class="btn btn-danger btn-block text-center text-white mb-4">Login</button>
 
-                        <div class="input-group mb-3">
-                            <input type="text" name="" id="" class="form-control" placeholder="Enter You Email">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary btn-sm text-center text-white">Subscribe Now !</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
                 <!-- -------card three ------- -->
                 <div class="card mt-5">
                     <div class="card-body">
                         <img src="Images/Whopper.jpg" class="d-block img-fluid mb-3" alt="">
                         <div class="text-center">
-                            <h3>Order From Whopper</h3>
+                            <a href="www.google.com/whooper" target="_blank">
+                                <h3>Whooper</h3>
+                            </a>
                             <h4 class="lead">Anywhere AnyPlace AnyTime</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit. Dolorum consequuntur autem iste
@@ -279,7 +258,10 @@
                 <div class="card mt-5">
                     <div class="card-body">
                         <div class="text-center">
-                            <h3>Huawei Technologies</h3>
+                            <a href="www.google.com/tiktok" target="_blank">
+                                <h3>Huawei Technologies</h3>
+                            </a>
+
                             <h4 class="lead">Get the latest Technology</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit.</p>

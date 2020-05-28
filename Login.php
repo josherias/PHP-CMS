@@ -13,6 +13,7 @@ if (isset($_POST['Submit'])) {
     $UserName = $_POST['Username'];
     $Password = $_POST['Password'];
 
+
     if (empty($UserName) || empty($Password)) {
         $_SESSION['ErrorMessage'] = "All fields must be filled";
         Redirect_to("Login.php");

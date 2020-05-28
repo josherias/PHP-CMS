@@ -67,40 +67,20 @@ if (isset($_POST['Submit'])) {
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">JOSH</a>
+            <a href="Blog.php?page=1" class="navbar-brand">JOSH</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapseCMS">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarcollapseCMS">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="Blog.php" class="nav-link">Home</a>
+                        <a href="Blog.php?page=1" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Blog.php" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Features</a>
+                        <a href="Blog.php?page=1" class="nav-link">Blog</a>
                     </li>
 
                 </ul>
-                <!-- --------------search button------------- -->
-                <ul class="navbar-nav ml-auto">
-                    <form class="form-inline d-none d-sm-block" action="Blog.php" method="GET">
-                        <div class="form-group">
-                            <input class="form-control mr-2" type="text" name="Search" placeholder="Search here">
-                            <button type="submit" class="btn btn-primary" name="SearchButton">Go</button>
-
-                        </div>
-                    </form>
-                </ul>
-                <!-- ------X--------search button-----X-------- -->
             </div>
         </div>
     </nav>
@@ -214,6 +194,7 @@ if (isset($_POST['Submit'])) {
                         <div class="card mb-3">
                             <div class="card-header">
                                 <h5 class="FieldInfo">Share your thouts about this post</h5>
+                                <small style="color: red;">Your Comment will Only be visible After Approval</small>
                             </div>
                             <div class="card-body">
                                 <!-- --------------CommenterNAme Field------------- -->
@@ -260,13 +241,15 @@ if (isset($_POST['Submit'])) {
             <!-- --X----Main Area----X---- -->
 
             <!-- ------Side Area-------- -->
-            <div class="col-sm-4">
+            <div class="col-sm-4 d-none d-md-block d-lg-block">
                 <!-- -------card one ------- -->
                 <div class="card mt-4">
                     <div class="card-body">
                         <img src="Images/tik-tok-0827.jpg" class="d-block img-fluid mb-3" alt="">
                         <div class="text-center">
-                            <h3>Tik Tok</h3>
+                            <a href="www.google.com/tiktok" target="_blank">
+                                <h3>Tik Tok</h3>
+                            </a>
                             <h4 class="lead">Sign Up for free</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit. Dolorum consequuntur autem iste
@@ -276,30 +259,15 @@ if (isset($_POST['Submit'])) {
                     </div>
                 </div>
                 <br>
-                <!-- -------card two ------- -->
-                <div class="card mt-5">
-                    <div class="card-header bg-dark text-light">
-                        <h2 class="lead"> Sign Up !</h2>
-                    </div>
-                    <div class="card-body">
-                        <button class="btn btn-primary btn-block text-center text-white mb-4">Join the Forum</button>
-                        <button class="btn btn-danger btn-block text-center text-white mb-4">Login</button>
-
-                        <div class="input-group mb-3">
-                            <input type="text" name="" id="" class="form-control" placeholder="Enter You Email">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary btn-sm text-center text-white">Subscribe Now !</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
                 <!-- -------card three ------- -->
                 <div class="card mt-5">
                     <div class="card-body">
                         <img src="Images/Whopper.jpg" class="d-block img-fluid mb-3" alt="">
                         <div class="text-center">
-                            <h3>Order From Whopper</h3>
+
+                            <a href="www.google.com/whooper" target="_blank">
+                                <h3>Order From Whopper</h3>
+                            </a>
                             <h4 class="lead">Anywhere AnyPlace AnyTime</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit. Dolorum consequuntur autem iste
@@ -308,32 +276,18 @@ if (isset($_POST['Submit'])) {
                         </div>
                     </div>
                 </div>
-                <!-- -------card four ------- -->
-                <div class="card mt-5">
-                    <div class="card-header bg-primary text-light">
-                        <h2 class="lead">Categories</h2>
-                    </div>
-                    <div class="card-body">
-                        <?php
-                        $connectingDB;
 
-                        $sql  = "SELECT * FROM category ORDER BY id desc";
-                        $stmt = $connectingDB->query($sql);
-                        while ($DataRows = $stmt->fetch()) {
-                            $CategoryId = $DataRows['id'];
-                            $CategoryName = $DataRows['title'];
-                        ?>
-                            <a href="Blog.php?category=<?php echo $CategoryName ?>" class="btn btn-light btn-block"><?php echo htmlentities($CategoryName); ?></a> <br>
-                        <?php } ?>
-                    </div>
-
-                </div>
                 <br>
                 <!-- -------card three ------- -->
                 <div class="card mt-5">
                     <div class="card-body">
                         <div class="text-center">
-                            <h3>Huawei Technologies</h3>
+
+                            <a href="www.google.com/Huawei" target="_blank">
+                                <h3>Huawei Technologies</h3>
+                            </a>
+
+
                             <h4 class="lead">Get the latest Technology</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit.</p>
@@ -342,37 +296,7 @@ if (isset($_POST['Submit'])) {
                     </div>
                 </div>
                 <br>
-                <!-- -------card six ------- -->
-                <div class="card mt-5">
-                    <div class="card-header bg-info text-white">
-                        <h2 class="lead">Recent Posts</h2>
-                    </div>
-                    <div class="card-body">
-                        <?php
-                        $connectingDB;
-                        $sql = "SELECT * FROM posts ORDER BY id desc LIMIT 0,5";
-                        $stmt = $connectingDB->query($sql);
 
-                        while ($DataRows = $stmt->fetch()) {
-                            $Id = $DataRows['id'];
-                            $Title = $DataRows['title'];
-                            $DateTime = $DataRows['datetime'];
-                            $Image = $DataRows['image'];
-
-                        ?>
-                            <div class="media">
-                                <img src="Uploads/<?php echo  htmlentities($Image); ?>" alt="" class="d-block img-fluid align-self-start" width="90" height="94">
-                                <div class="media-body ml-2">
-                                    <a href="FullPost.php?id=<?php echo  htmlentities($Id); ?>" target="_blank">
-                                        <h6 class="lead"><?php echo  htmlentities($Title); ?></h6>
-                                    </a>
-                                    <p class="small"><?php echo  htmlentities($DateTime); ?></p>
-                                </div>
-                            </div>
-                            <hr>
-                        <?php } ?>
-                    </div>
-                </div>
             </div>
             <!-- -X-----Side Area-----X--- -->
         </div>
