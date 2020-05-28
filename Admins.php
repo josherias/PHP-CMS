@@ -37,6 +37,8 @@ if (isset($_POST['Submit'])) {
         $sql = "INSERT INTO admins (datetime,username,password,aname,addedby) 
                 VALUES (:dateTime,:userName,:password,:aName,:adminName)";
 
+        $Password = md5($Password);
+
         $stmt = $connectingDB->prepare($sql);
         $stmt->bindValue(':dateTime', $DateTime);
         $stmt->bindValue(':userName', $Username);
